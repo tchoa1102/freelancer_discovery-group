@@ -1,0 +1,59 @@
+.header {
+    & {
+        border: 1px solid #000;
+        width: 1300px;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        & {
+            width: 80px;
+            height: 71.4px;
+            display: block;
+        }
+
+        img {
+            block-size: 100%;
+        }
+    }
+
+    .nav {
+        display: flex;
+        gap: 10px;
+
+        &__link {
+            & {
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+                gap: 10px;
+                padding: 10px;
+                font-weight: 600;
+                line-height: 17.71px;
+            }
+
+            &.active {
+                color: #e74822;
+            }
+
+            div {
+                padding-left: 0.35px;
+                padding-right: 0.35px;
+                span {
+                    display: block;
+                    padding-top: 0.15px;
+                    padding-bottom: 0.15px;
+                }
+            }
+            span {
+                img {
+                    width: 4px;
+                    height: 8px;
+                }
+            }
+        }
+    }
+}

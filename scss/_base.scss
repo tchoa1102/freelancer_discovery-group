@@ -3,3 +3,30 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    font-family: 'Be Vietnam Pro';
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background: #fff;
+}
+
+main {
+    border: 1px solid #000;
+    width: 1440px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.hidden {
+    display: none;
+}

@@ -4,6 +4,170 @@
   box-sizing: border-box;
 }
 
+html {
+  font-family: "Be Vietnam Pro";
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background: #fff;
+}
+
 main {
-  background-color: black;
+  border: 1px solid #000;
+  width: 1440px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.hidden {
+  display: none;
+}
+
+.header {
+  border: 1px solid #000;
+  width: 1300px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .logo {
+  width: 80px;
+  height: 71.4px;
+  display: block;
+}
+.header .logo img {
+  block-size: 100%;
+}
+.header .nav {
+  display: flex;
+  gap: 10px;
+}
+.header .nav__link {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  gap: 10px;
+  padding: 10px;
+  font-weight: 600;
+  line-height: 17.71px;
+}
+.header .nav__link.active {
+  color: #e74822;
+}
+.header .nav__link div {
+  padding-left: 0.35px;
+  padding-right: 0.35px;
+}
+.header .nav__link div span {
+  display: block;
+  padding-top: 0.15px;
+  padding-bottom: 0.15px;
+}
+.header .nav__link span img {
+  width: 4px;
+  height: 8px;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.banner {
+  width: 100%;
+  height: 800px;
+  position: relative;
+}
+.banner__item {
+  block-size: 100%;
+  background-size: cover;
+  background-position-x: left;
+  background-position-y: center;
+}
+.banner__item__overlay {
+  block-size: 100%;
+}
+.banner__social {
+  position: absolute;
+  bottom: 0;
+  right: 70px;
+}
+.banner__social::after {
+  content: "";
+  display: block;
+  border: 1.2px solid #fff;
+  width: 0;
+  height: 139px;
+  margin-top: 30px;
+  margin-left: 50%;
+  transform: translateX(-0.6px);
+}
+.banner__social__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.banner__social__container__item {
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.banner__social__container__item img {
+  block-size: 15px;
+}
+
+.about {
+  display: flex;
+  padding: 100px 70px;
+  gap: 155px;
+  font-size: 14px;
+}
+.about__content {
+  margin-top: 30px;
+}
+.about__content__heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.about__content__heading img {
+  width: 20px;
+  height: 6px;
+}
+.about__content__heading div {
+  overflow: hidden;
+}
+.about__content__heading div h3 {
+  box-sizing: content-box;
+  padding-left: 0.1px;
+  padding-right: 0.1px;
+  padding-top: 1.3px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+.about__content > p:nth-child(2) {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 35.42px;
+}
+.about__content__name {
+  color: #e74822;
+}
+.about__img {
+  width: 545px;
 }/*# sourceMappingURL=index.css.map */
