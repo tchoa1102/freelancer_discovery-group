@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const coverColor = substractBg.dataset.cover
 
         // fieldActivityItem.style.background = `url('${bgShow}') center/cover, #383838`
-        console.log(bgShow)
+        // console.log(bgShow)
         sub.style.backgroundImage = `url('${bgShow}')`
         fieldActivityItem.addEventListener('mouseover', () => {
             over.style.display = 'block'

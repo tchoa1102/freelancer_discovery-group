@@ -184,6 +184,7 @@ a {
   }
 }
 .banner__item {
+  width: 100%;
   block-size: 100%;
   background-size: cover;
   background-position-x: left;
@@ -420,7 +421,6 @@ a {
 .why-choose__list {
   display: flex;
   gap: 35px;
-  overflow: hidden;
 }
 @media only screen and (max-width: 600px) {
   .why-choose__list {
@@ -521,6 +521,12 @@ a {
 @media only screen and (max-width: 600px) {
   .why-choose__list__item-container__body > p:nth-child(2) {
     font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #slide-why-choose.splide {
+    visibility: visible;
   }
 }
 

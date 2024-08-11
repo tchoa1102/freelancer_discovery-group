@@ -8,11 +8,12 @@
             href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
             rel="stylesheet"
         />
-        <!-- <link rel="stylesheet" href="./public/assets/css/index.css" /> -->
         <link
             rel="stylesheet"
-            href="https://tchoa1102.github.io/freelancer_discovery-group/public/assets/css/index.css"
+            href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
         />
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+        <link rel="stylesheet" href="./public/assets/css/index.css" />
     </head>
     <body>
         <main>
@@ -72,42 +73,64 @@
                 </div>
             </header>
 
+            <!-- <div id="splide2" class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img src="https://via.placeholder.com/800x400" alt="Slide 1" />
+                        </li>
+                        <li class="splide__slide">
+                            <img src="https://via.placeholder.com/800x400" alt="Slide 2" />
+                        </li>
+                        <li class="splide__slide">
+                            <img src="https://via.placeholder.com/800x400" alt="Slide 3" />
+                        </li>
+                    </ul>
+                </div>
+            </div> -->
             <section class="main">
-                <section class="banner">
-                    <section
-                        class="banner__item"
-                        style="
-                            background-image: url('./public/assets/img/banner/thi-cong-noi-that-biet-thu-6.png');
-                        "
-                    >
-                        <div
-                            class="banner__item__overlay"
-                            style="background: rgba(0, 36, 78, 0.3)"
-                        ></div>
-                    </section>
-                    <section
-                        class="banner__item hidden"
-                        style="
-                            background-image: url('./public/assets/img/banner/imagereader\ \(7\).png');
-                        "
-                    >
-                        <div
-                            class="banner__item__overlay"
-                            style="background: rgba(0, 36, 78, 0.3)"
-                        ></div>
-                    </section>
-                    <section
-                        class="banner__item hidden"
-                        style="
-                            background-image: url('./public/assets/img/banner/imagereader\ \(10\).png');
-                        "
-                    >
-                        <div
-                            class="banner__item__overlay"
-                            style="background: rgba(0, 36, 78, 0.3)"
-                        ></div>
-                    </section>
-
+                <section class="temp-banner" style="position: relative">
+                    <div id="splide" class="splide">
+                        <div class="splide__track">
+                            <section class="splide__list banner">
+                                <section
+                                    class="splide__slide banner__item"
+                                    style="
+                                        background-image: url('./public/assets/img/banner/thi-cong-noi-that-biet-thu-6.png');
+                                    "
+                                >
+                                    <div
+                                        class="banner__item__overlay"
+                                        style="background: rgba(0, 36, 78, 0.3)"
+                                    ></div>
+                                </section>
+                                <!-- hidden -->
+                                <section
+                                    class="splide__slide banner__item"
+                                    style="
+                                        background-image: url('./public/assets/img/banner/imagereader\ \(7\).png');
+                                    "
+                                >
+                                    <div
+                                        class="banner__item__overlay"
+                                        style="background: rgba(0, 36, 78, 0.3)"
+                                    ></div>
+                                </section>
+                                <!-- hidden -->
+                                <section
+                                    class="splide__slide banner__item"
+                                    style="
+                                        background-image: url('./public/assets/img/banner/imagereader\ \(10\).png');
+                                    "
+                                >
+                                    <div
+                                        class="banner__item__overlay"
+                                        style="background: rgba(0, 36, 78, 0.3)"
+                                    ></div>
+                                </section>
+                            </section>
+                        </div>
+                    </div>
                     <section class="banner__social">
                         <div class="banner__social__container">
                             <div
@@ -202,96 +225,123 @@
                         <span>Vì Sao Nên Chọn </span> <span>Discovey Homes</span>
                     </h2>
 
-                    <section class="why-choose__list" uk-slider="autoplay: true">
-                        <div
-                            class="uk-slider-items why-choose__list__item substract substract--top-left-and-bottom-right"
-                        >
-                            <div class="active why-choose__list__item-container substract-bg">
-                                <div class="why-choose__list__item-container__media">
-                                    <img src="./public/assets/img/why-choose/steel.png" alt="" />
-                                </div>
+                    <div id="slide-why-choose" class="splide">
+                        <div class="splide__track">
+                            <section class="splide__list why-choose__list">
+                                <div
+                                    class="splide__slide why-choose__list__item substract substract--top-left-and-bottom-right"
+                                >
+                                    <div
+                                        class="active why-choose__list__item-container substract-bg"
+                                    >
+                                        <div class="why-choose__list__item-container__media">
+                                            <img
+                                                src="./public/assets/img/why-choose/steel.png"
+                                                alt=""
+                                            />
+                                        </div>
 
-                                <div class="why-choose__list__item-container__body">
-                                    <p>Chất Lượng</p>
-                                    <p>
-                                        Cam kết xây dựng các công trình chất lượng cao, sử dụng vật
-                                        liệu tốt nhất, đảm bảo an toàn và bền vững.
-                                    </p>
+                                        <div class="why-choose__list__item-container__body">
+                                            <p>Chất Lượng</p>
+                                            <p>
+                                                Cam kết xây dựng các công trình chất lượng cao, sử
+                                                dụng vật liệu tốt nhất, đảm bảo an toàn và bền vững.
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div
-                            class="uk-slider-items why-choose__list__item substract substract--top-left-and-bottom-right"
-                        >
-                            <div class="why-choose__list__item-container border-clip substract-bg">
-                                <div class="why-choose__list__item-container__media">
-                                    <img src="./public/assets/img/why-choose/light.png" alt="" />
-                                </div>
+                                <div
+                                    class="splide__slide why-choose__list__item substract substract--top-left-and-bottom-right"
+                                >
+                                    <div
+                                        class="why-choose__list__item-container border-clip substract-bg"
+                                    >
+                                        <div class="why-choose__list__item-container__media">
+                                            <img
+                                                src="./public/assets/img/why-choose/light.png"
+                                                alt=""
+                                            />
+                                        </div>
 
-                                <div class="why-choose__list__item-container__body">
-                                    <p>Thiết Kế</p>
-                                    <p>
-                                        Các sản phẩm của Discovery Homes được thiết kế hiện đại,
-                                        thông minh, tối ưu hóa công năng sử dụng.
-                                    </p>
+                                        <div class="why-choose__list__item-container__body">
+                                            <p>Thiết Kế</p>
+                                            <p>
+                                                Các sản phẩm của Discovery Homes được thiết kế hiện
+                                                đại, thông minh, tối ưu hóa công năng sử dụng.
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div
-                            class="uk-slider-items why-choose__list__item substract substract--top-left-and-bottom-right"
-                        >
-                            <div class="why-choose__list__item-container border-clip substract-bg">
-                                <div class="why-choose__list__item-container__media">
-                                    <img
-                                        src="./public/assets/img/why-choose/placeholder.png"
-                                        alt=""
-                                    />
-                                </div>
+                                <div
+                                    class="splide__slide why-choose__list__item substract substract--top-left-and-bottom-right"
+                                >
+                                    <div
+                                        class="why-choose__list__item-container border-clip substract-bg"
+                                    >
+                                        <div class="why-choose__list__item-container__media">
+                                            <img
+                                                src="./public/assets/img/why-choose/placeholder.png"
+                                                alt=""
+                                            />
+                                        </div>
 
-                                <div class="why-choose__list__item-container__body">
-                                    <p>Vị Trí</p>
-                                    <p>
-                                        Các dự án đều được lựa chọn ở những vị trí đắc địa, thuận
-                                        tiện giao thông, gần các tiện ích công cộng.
-                                    </p>
+                                        <div class="why-choose__list__item-container__body">
+                                            <p>Vị Trí</p>
+                                            <p>
+                                                Các dự án đều được lựa chọn ở những vị trí đắc địa,
+                                                thuận tiện giao thông, gần các tiện ích công cộng.
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div
-                            class="uk-slider-items why-choose__list__item substract substract--top-left-and-bottom-right"
-                        >
-                            <div class="why-choose__list__item-container border-clip substract-bg">
-                                <div class="why-choose__list__item-container__media">
-                                    <img src="./public/assets/img/why-choose/nature.png" alt="" />
-                                </div>
+                                <div
+                                    class="splide__slide why-choose__list__item substract substract--top-left-and-bottom-right"
+                                >
+                                    <div
+                                        class="why-choose__list__item-container border-clip substract-bg"
+                                    >
+                                        <div class="why-choose__list__item-container__media">
+                                            <img
+                                                src="./public/assets/img/why-choose/nature.png"
+                                                alt=""
+                                            />
+                                        </div>
 
-                                <div class="why-choose__list__item-container__body">
-                                    <p>Tiện Ích</p>
-                                    <p>
-                                        Cung cấp đầy đủ các tiện ích nội khu và ngoại khu, đáp ứng
-                                        nhu cầu sống của cư dân.
-                                    </p>
+                                        <div class="why-choose__list__item-container__body">
+                                            <p>Tiện Ích</p>
+                                            <p>
+                                                Cung cấp đầy đủ các tiện ích nội khu và ngoại khu,
+                                                đáp ứng nhu cầu sống của cư dân.
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div
-                            class="uk-slider-items why-choose__list__item substract substract--top-left-and-bottom-right"
-                        >
-                            <div class="why-choose__list__item-container border-clip substract-bg">
-                                <div class="why-choose__list__item-container__media">
-                                    <img src="./public/assets/img/why-choose/fame.png" alt="" />
-                                </div>
+                                <div
+                                    class="splide__slide why-choose__list__item substract substract--top-left-and-bottom-right"
+                                >
+                                    <div
+                                        class="why-choose__list__item-container border-clip substract-bg"
+                                    >
+                                        <div class="why-choose__list__item-container__media">
+                                            <img
+                                                src="./public/assets/img/why-choose/fame.png"
+                                                alt=""
+                                            />
+                                        </div>
 
-                                <div class="why-choose__list__item-container__body">
-                                    <p>Uy Tín</p>
-                                    <p>
-                                        Là thành viên của Tập đoàn Discovery, Discovery Homes được
-                                        thừa hưởng uy tín và kinh nghiệm của tập đoàn.
-                                    </p>
+                                        <div class="why-choose__list__item-container__body">
+                                            <p>Uy Tín</p>
+                                            <p>
+                                                Là thành viên của Tập đoàn Discovery, Discovery
+                                                Homes được thừa hưởng uy tín và kinh nghiệm của tập
+                                                đoàn.
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
+                            </section>
                         </div>
-                    </section>
+                    </div>
                 </section>
 
                 <section class="core-value-and-commitment">
@@ -456,7 +506,7 @@
                     </section>
                 </section>
 
-                <div class="field-activity">
+                <section class="field-activity">
                     <div class="field-activity__header">
                         <div class="field-activity__header__heading">
                             <span>Lĩnh Vực</span>
@@ -777,7 +827,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
             </section>
 
             <footer class="footer">
@@ -885,6 +935,37 @@
         </svg>
     </body>
 
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.9/dist/js/uikit.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.9/dist/js/uikit.min.js"></script> -->
+    <script src="path-to-the-script/splide-extension-auto-scroll.min.js"></script>
     <script src="./public/assets/js/main.js" type="module"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            new Splide('#splide', {
+                type: 'loop',
+                perPage: 1,
+                perMove: 1,
+                autoplay: true,
+                interval: 3000,
+                arrows: false,
+                pagination: false,
+            }).mount()
+            if (window.innerWidth > 600) {
+                new Splide('#slide-why-choose', {
+                    type: 'loop',
+                    perPage: 3.42, // Hiển thị 3,5 phần tử mỗi lần
+                    perMove: 1, // Di chuyển 1 phần tử mỗi lần
+                    focus: 'center', // Căn giữa các phần tử
+                    autoplay: true, // Tự động cuộn
+                    interval: 3000, // Khoảng thời gian giữa các lần cuộn (ms)
+                    pagination: true, // Hiển thị pagination
+                    arrows: false, // Ẩn mũi tên điều hướng
+                    autoScroll: {
+                        speed: 1, // Tốc độ cuộn (pixel/frame)
+                    },
+                    arrows: false,
+                    pagination: false,
+                }).mount()
+            }
+        })
+    </script>
 </html>

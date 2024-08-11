@@ -32,7 +32,7 @@
         & {
             display: flex;
             gap: 35px;
-            overflow: hidden;
+            // overflow: hidden;
             // overflow-x: auto;
             // scroll-behavior: smooth;
             // scrollbar-width: 0;
@@ -135,5 +135,11 @@
                 }
             }
         }
+    }
+}
+
+#slide-why-choose.splide {
+    @media only screen and (max-width: 600px) {
+        visibility: visible;
     }
 }
