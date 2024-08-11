@@ -1,6 +1,6 @@
 .field-activity {
     & {
-        padding: 70px;
+        padding: 0 24px;
     }
 
     &__header {
@@ -11,6 +11,11 @@
             flex-direction: column;
             align-items: center;
             gap: 30px;
+
+            @media only screen and (max-width: 600px) {
+                gap: 25px;
+                margin-bottom: 50px;
+            }
         }
 
         &__heading {
@@ -21,6 +26,9 @@
                 display: inline-block;
                 word-spacing: -1px;
                 color: #383838;
+                @media only screen and (max-width: 600px) {
+                    font-size: 20px;
+                }
             }
 
             & > span:first-child {
@@ -33,6 +41,10 @@
             font-weight: 300;
             line-height: 1.257;
             width: 624px;
+            @media only screen and (max-width: 600px) {
+                font-size: 16px;
+                width: 342px;
+            }
         }
     }
 
@@ -41,6 +53,12 @@
             & {
                 display: flex;
                 gap: 33.33px;
+
+                @media only screen and (max-width: 600px) {
+                    gap: 20px;
+                    flex-direction: column;
+                    align-items: center;
+                }
             }
             &__item {
                 & {
@@ -61,6 +79,15 @@
 
                 &:hover &__title {
                     display: block;
+                }
+
+                .substract {
+                    width: 300px;
+                    height: 350px;
+                    @media only screen and (max-width: 600px) {
+                        width: 342px;
+                        height: 380px;
+                    }
                 }
 
                 &__container {
@@ -90,6 +117,10 @@
                     font-weight: 600;
                     line-height: 1.265;
                     text-align: center;
+                    @media only screen and (max-width: 600px) {
+                        font-size: 18px;
+                        margin-top: 30px;
+                    }
                 }
 
                 &__title {
@@ -101,6 +132,10 @@
                     font-weight: 300;
                     line-height: 1.554;
                     width: 250px;
+                    @media only screen and (max-width: 600px) {
+                        font-size: 12px;
+                        margin-top: 20px;
+                    }
                 }
             }
         }
