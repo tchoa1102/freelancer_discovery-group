@@ -6,6 +6,8 @@
 
 :root {
   --bg-sbtr: #000;
+  --primary-color: #e74822;
+  --base-color: #383838;
 }
 
 html {
@@ -45,22 +47,67 @@ a {
   background-size: 100%;
   filter: url("#goo");
 }
-
-.substract-bg {
+.substract > div:first-child,
+.substract .substract-bg {
   height: 100%;
   width: 100%;
   background-size: cover;
   background-position: center;
 }
 
+.substract--top-left > div:first-child,
 .substract--top-left .substract-bg {
   -webkit-clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 20%);
   clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 16%);
 }
 
+.substract--top-right > div:first-child,
+.substract--top-right .substract-bg {
+  -webkit-clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 20%);
+  clip-path: polygon(0% 0%, 380px 0%, 100% 45px, 100% 100%, 0% 100%);
+}
+
+.substract--bottom-left > div:first-child,
 .substract--bottom-left .substract-bg {
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 10% 100%, 0% 74%);
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 10% 100%, 0% 74%);
+}
+
+.substract--bottom-left-hight > div:first-child,
+.substract--bottom-left-hight .substract-bg {
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 10% 100%, 0% 74%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 60px 100%, 0% 525px);
+}
+
+.substract--bottom-right > div:first-child,
+.substract--bottom-right .substract-bg {
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 74%, 20% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 74%, 80% 100%, 0% 100%);
+}
+
+.substract--top-left-and-bottom-right > div:first-child,
+.substract--top-left-and-bottom-right .substract-bg {
+  -webkit-clip-path: polygon(50px 0%, 100% 0%, 100% 230px, 330px 100%, 0% 100%, 0% 50px);
+  clip-path: polygon(50px 0%, 100% 0%, 100% 230px, 330px 100%, 0% 100%, 0% 50px);
+}
+.substract--top-left-and-bottom-right > .substract-bg {
+  position: relative;
+  background-color: #00254e;
+}
+.substract--top-left-and-bottom-right > .substract-bg.border-clip::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  -webkit-clip-path: polygon(50px 0%, 100% 0%, 100% 229px, 329px 100%, 0% 100%, 0% 50px);
+          clip-path: polygon(50px 0%, 100% 0%, 100% 229px, 329px 100%, 0% 100%, 0% 50px);
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  background-color: #fff;
+  top: 0;
+  left: 0;
 }
 
 .header {
@@ -237,4 +284,163 @@ a {
 .about__see-more span {
   padding-left: 0.5px;
   padding-right: 0.5px;
+}
+
+.why-choose {
+  color: #f2f8fd;
+  padding: 70px;
+}
+.why-choose__heading {
+  text-align: center;
+  font-size: 40px;
+  color: #00254e;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 60px;
+}
+.why-choose__heading > span:first-child {
+  color: #e74822;
+}
+.why-choose__list {
+  display: flex;
+  gap: 35px;
+  overflow: hidden;
+}
+.why-choose__list__item {
+  width: 380px;
+  height: 280px;
+}
+.why-choose__list__item-container {
+  border: 0.5px solid #00254e;
+  padding-top: 45px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  color: #00254e;
+}
+.why-choose__list__item-container.active {
+  color: #f2f8fd;
+  background-color: #00254e;
+}
+.why-choose__list__item-container.active__media {
+  background-color: #f2f8fd;
+}
+.why-choose__list__item-container__media {
+  background-color: #f2f8fd;
+  padding: 15px;
+  border-radius: 10px;
+}
+.why-choose__list__item-container__media > img {
+  display: block;
+  width: 25px;
+  height: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.why-choose__list__item-container__body {
+  margin-bottom: 46px;
+  width: 300px;
+}
+.why-choose__list__item-container__body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+.why-choose__list__item-container__body > p:first-child {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+}
+.why-choose__list__item-container__body > p:nth-child(2) {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.524;
+}
+
+.core-value-and-commitment {
+  padding-top: 70px;
+  padding-left: 70px;
+  padding-bottom: 70px;
+  padding-right: 85px;
+}
+.core-value-and-commitment__heading {
+  width: 535px;
+  height: 51px;
+  margin-bottom: 60px;
+  color: #00254e;
+  font-size: 40px;
+  line-height: 1.265;
+  font-weight: 700;
+  display: inline-block;
+  word-spacing: -1px;
+}
+.core-value-and-commitment__heading > span:first-child {
+  color: #e74822;
+}
+.core-value-and-commitment__body {
+  display: flex;
+  justify-content: space-between;
+}
+.core-value-and-commitment__body__media {
+  position: relative;
+  min-width: 55%;
+  margin-bottom: 100px;
+}
+.core-value-and-commitment__body__media > *:nth-child(2) {
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  border: 5px solid #fff;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.core-value-and-commitment__body__content {
+  margin-top: 21px;
+  width: 515px;
+}
+.core-value-and-commitment__body__content__list {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+.core-value-and-commitment__body__content__list__item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.core-value-and-commitment__body__content__list__item > div:nth-child(1) {
+  display: flex;
+  gap: 10px;
+}
+.core-value-and-commitment__body__content__list__item > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.core-value-and-commitment__body__content__list__item__heading {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+.core-value-and-commitment__body__content__list__item__heading:hover {
+  color: var(--primary-color);
+}
+.core-value-and-commitment__body__content__list__item__title {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.25;
+}
+.core-value-and-commitment__body__content__list__item .hover {
+  display: none;
+  block-size: 30px;
+}
+.core-value-and-commitment__body__content__list__item .un-hover {
+  display: block;
+  block-size: 30px;
 }/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,108 @@
+.core-value-and-commitment {
+    & {
+        padding-top: 70px;
+        padding-left: 70px;
+        padding-bottom: 70px;
+        padding-right: 85px;
+    }
+
+    &__heading {
+        & {
+            width: 535px;
+            height: 51px;
+            margin-bottom: 60px;
+            color: #00254e;
+            font-size: 40px;
+            line-height: 1.265;
+            font-weight: 700;
+            display: inline-block;
+            word-spacing: -1px;
+        }
+
+        & > span:first-child {
+            color: #e74822;
+        }
+    }
+
+    &__body {
+        & {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__media {
+            & {
+                position: relative;
+                min-width: 55%;
+                margin-bottom: 100px;
+            }
+
+            & > *:nth-child(2) {
+                position: absolute;
+                top: 100px;
+                left: 200px;
+                border: 5px solid #fff;
+                border-radius: 5px;
+                background-color: #fff;
+            }
+        }
+
+        &__content {
+            margin-top: 21px;
+            width: 515px;
+            &__list {
+                & {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 55px;
+                }
+
+                &__item {
+                    & {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                    }
+
+                    & > div:nth-child(1) {
+                        display: flex;
+                        gap: 10px;
+                    }
+
+                    & > div:nth-child(2) {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                    }
+
+                    &__heading {
+                        & {
+                            font-size: 16px;
+                            font-weight: 600;
+                            line-height: 1.25;
+                        }
+
+                        &:hover {
+                            color: var(--primary-color);
+                        }
+                    }
+
+                    &__title {
+                        font-size: 14px;
+                        font-weight: 300;
+                        line-height: 1.25;
+                    }
+
+                    .hover {
+                        display: none;
+                        block-size: 30px;
+                    }
+                    .un-hover {
+                        display: block;
+                        block-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

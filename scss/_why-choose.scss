@@ -1,0 +1,97 @@
+.why-choose {
+    & {
+        color: #f2f8fd;
+        padding: 70px;
+    }
+
+    &__heading {
+        & {
+            text-align: center;
+            font-size: 40px;
+            color: #00254e;
+            font-weight: 700;
+            line-height: 1.5;
+            margin-bottom: 60px;
+        }
+        & > span:first-child {
+            color: #e74822;
+        }
+    }
+
+    &__list {
+        & {
+            display: flex;
+            gap: 35px;
+            overflow: hidden;
+            // overflow-x: auto;
+            // scroll-behavior: smooth;
+            // scrollbar-width: 0;
+        }
+
+        &__item {
+            width: 380px;
+            height: 280px;
+            &-container {
+                & {
+                    border: 0.5px solid #00254e;
+                    padding-top: 45px;
+                    padding-left: 40px;
+                    padding-right: 40px;
+                    border-radius: 12px;
+                    overflow: hidden;
+
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    align-items: center;
+                    color: #00254e;
+                }
+                &.active {
+                    color: #f2f8fd;
+                    background-color: #00254e;
+                    &__media {
+                        background-color: #f2f8fd;
+                    }
+                }
+
+                &__media {
+                    & {
+                        background-color: #f2f8fd;
+                        padding: 15px;
+                        border-radius: 10px;
+                    }
+
+                    & > img {
+                        display: block;
+                        width: 25px;
+                        height: 25px;
+                        object-fit: cover;
+                    }
+                }
+
+                &__body {
+                    margin-bottom: 46px;
+                    width: 300px;
+                    & {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                        text-align: center;
+                    }
+
+                    & > p:first-child {
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 1.25;
+                    }
+
+                    & > p:nth-child(2) {
+                        font-weight: 300;
+                        font-size: 14px;
+                        line-height: 1.524;
+                    }
+                }
+            }
+        }
+    }
+}
