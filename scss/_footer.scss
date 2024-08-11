@@ -1,0 +1,101 @@
+.footer {
+    & {
+        max-width: 1440px;
+        width: 1440px;
+        padding: 70px 67px 80px;
+        color: #fff;
+        background-color: #00254e;
+        display: flex;
+        @media only screen and (max-width: 600px) {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            width: 100%;
+            padding-top: 48px;
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+    }
+
+    &__logo {
+        & {
+            width: 100%;
+        }
+
+        & img {
+            width: 140px;
+            height: 125px;
+        }
+    }
+
+    &__about {
+        & {
+            width: 100%;
+        }
+
+        & h3 {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 1.5;
+            margin-bottom: 40px;
+            @media only screen and (max-width: 600px) {
+                margin-bottom: 20px;
+            }
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+
+            &__item {
+                & {
+                    display: flex;
+                    // align-items: center;
+                    gap: 8px;
+                    color: #fff;
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 1.4;
+                }
+                img {
+                    display: block;
+                    width: 8px;
+                    height: 16px;
+                }
+            }
+        }
+    }
+
+    &__contact {
+        width: 100%;
+        &__heading {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 1.5;
+            margin-bottom: 40px;
+            @media only screen and (max-width: 600px) {
+                margin-bottom: 20px;
+            }
+        }
+
+        &__list {
+            & {
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+            }
+            &__item {
+                display: flex;
+                gap: 15px;
+                align-items: center;
+
+                div p {
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 1.4;
+                }
+            }
+        }
+    }
+}

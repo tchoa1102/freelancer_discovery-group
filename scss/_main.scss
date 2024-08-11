@@ -1,4 +1,6 @@
 @import './header';
+@import './header-nav-mobile';
+@import './footer';
 
 .main {
     width: 100%;
@@ -8,6 +10,7 @@
 
     @media only screen and (max-width: 600px) {
         gap: 60px;
+        position: relative;
     }
 }
 

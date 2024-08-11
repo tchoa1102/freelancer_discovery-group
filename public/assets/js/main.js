@@ -45,36 +45,16 @@ document.addEventListener('DOMContentLoaded', () => {
     })
     // #endregion handle hover field activity item
 
-    // const fieldActivityList = document.querySelector('.field-activity__list')
-
-    // const rect = fieldActivityList.getBoundingClientRect()
-    // const maxTD = fieldActivityList.scrollWidth - 1
-    // let i = 0
-    // let timeOut = 100
-    // let flag = false
-    // scrollSlide(fieldActivityList)
-    // function scrollSlide(element) {
-    //     setTimeout(() => {
-    //         timeOut = 100
-    //         if (flag) {
-    //             i -= 1
-    //             timeOut = 50
-    //         } else {
-    //             i += 0.5
-    //         }
-    //         element.scrollBy({
-    //             behavior: 'smooth',
-    //             left: i
-    //         })
-    //         if (fieldActivityList.scrollLeft + fieldActivityList.clientWidth >= maxTD) {
-    //             flag = true
-    //             // i = 0
-    //         }
-    //         console.log(flag, i)
-    //         if (fieldActivityList.scrollLeft == 0) {
-    //             flag = false
-    //         }
-    //         scrollSlide(element)
-    //     }, timeOut)
-    // }
+    // modal
+    const navMobileModal = document.querySelector('.nav-mobile-modal')
+    const btnShowNavModel = document.querySelector('.nav-mobile__show-nav__btn')
+    const btnCloseNavModal = document.querySelector('.nav-mobile-modal__close-btn')
+    btnShowNavModel.addEventListener('click', (e) => {
+        e.preventDefault()
+        navMobileModal.style.display = 'block'
+    })
+    btnCloseNavModal.addEventListener('click', (e) => {
+        e.preventDefault()
+        navMobileModal.style.display = 'none'
+    })
 })
