@@ -1,0 +1,108 @@
+.field-activity {
+    & {
+        padding: 70px;
+    }
+
+    &__header {
+        & {
+            margin-bottom: 60px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+
+        &__heading {
+            & {
+                font-size: 40px;
+                line-height: 1.265;
+                font-weight: 700;
+                display: inline-block;
+                word-spacing: -1px;
+                color: #383838;
+            }
+
+            & > span:first-child {
+                color: #e74822;
+            }
+        }
+
+        &__title {
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 1.257;
+            width: 624px;
+        }
+    }
+
+    &__body {
+        &__list {
+            & {
+                display: flex;
+                gap: 33.33px;
+            }
+            &__item {
+                & {
+                    position: relative;
+                }
+
+                &:hover &__container {
+                    bottom: 73px;
+                }
+
+                &:hover &__media {
+                    display: none;
+                }
+
+                &:hover &__heading {
+                    color: #f2f8fd;
+                }
+
+                &:hover &__title {
+                    display: block;
+                }
+
+                &__container {
+                    position: absolute;
+                    padding-left: 25px;
+                    padding-right: 25px;
+                    bottom: 40px;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                }
+
+                &__media {
+                    display: block;
+                    width: 60px;
+                    height: 60px;
+                    background-size: contain;
+                    background-position: center;
+                }
+
+                &__heading {
+                    display: block;
+                    color: #66717a;
+                    margin-top: 40px;
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 1.265;
+                    text-align: center;
+                }
+
+                &__title {
+                    display: none;
+                    color: #f2f8fd;
+                    margin-top: 30px;
+                    text-align: center;
+                    font-size: 14px;
+                    font-weight: 300;
+                    line-height: 1.554;
+                    width: 250px;
+                }
+            }
+        }
+    }
+}
