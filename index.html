@@ -130,50 +130,93 @@
                 </section>
 
                 <section class="about">
-                    <section class="about__content">
-                        <div class="about__content__heading">
-                            <img src="./public/assets/img/about/heading-icon.svg" alt="" />
-                            <div>
-                                <h3 class="">VỀ CHÚNG TÔI</h3>
+                    <section class="about__body">
+                        <div class="about__body__content">
+                            <div class="about__body__content__heading">
+                                <img src="./public/assets/img/about/heading-icon.svg" alt="" />
+                                <div>
+                                    <h3 class="">VỀ CHÚNG TÔI</h3>
+                                </div>
                             </div>
-                        </div>
-                        <p>
-                            Discovery Homes là một doanh nghiệp thành viên trực thuộc hệ sinh thái
-                            của <span class="about__content__name">Tập đoàn Discovery.</span>
-                        </p>
-                        <p>
-                            Discovery Homes chuyên đầu tư vào lĩnh vực bất động sản nhà ở. Với tầm
-                            nhìn trở thành một trong những nhà phát triển bất động sản hàng đầu,
-                            Discovery Homes mang đến những sản phẩm nhà ở chất lượng cao, đáp ứng
-                            nhu cầu đa dạng của khách hàng.
-                        </p>
-                        <div
-                            class=""
-                            style="background-image: url('./public/assets/img/about/more-1-2.svg')"
-                        >
-                            <span>Xem Thêm</span>
-                            <img src="./public/assets/img/about/more-1-2.svg" alt="" />
+                            <p>
+                                Discovery Homes là một doanh nghiệp thành viên trực thuộc hệ sinh
+                                thái của <br />
+                                <span class="about__body__content__name">Tập đoàn Discovery.</span>
+                            </p>
+                            <p>
+                                Discovery Homes chuyên đầu tư vào lĩnh vực bất động sản nhà ở. Với
+                                tầm nhìn trở thành một trong những nhà phát triển bất động sản hàng
+                                đầu, Discovery Homes mang đến những sản phẩm nhà ở chất lượng cao,
+                                đáp ứng nhu cầu đa dạng của khách hàng.
+                            </p>
                         </div>
                     </section>
                     <section class="about__img">
-                        <div class="">
-                            <div class="">
-                                <img src="./public/assets/img/about/1.png" alt="" />
+                        <section>
+                            <div
+                                class="substract substract--top-left"
+                                style="width: 230px; height: 300px"
+                            >
+                                <div
+                                    class="substract-bg"
+                                    style="
+                                        background-image: url('./public/assets/img/about/1-a.png');
+                                    "
+                                ></div>
                             </div>
-                            <div class="">
-                                <img src="./public/assets/img/about/1.png" alt="" />
+                            <div
+                                class="substract substract--bottom-left"
+                                style="width: 300px; height: 180px"
+                            >
+                                <div
+                                    class="substract-bg"
+                                    style="
+                                        background-image: url('./public/assets/img/about/2-b.png');
+                                    "
+                                ></div>
                             </div>
-                        </div>
-                        <div class="">
-                            <img src="./public/assets/img/about/1.png" alt="" />
+                        </section>
+                        <div class="bg-center" style="width: 230px; height: 320px">
+                            <div
+                                class="substract-bg"
+                                style="
+                                    background-image: url('./public/assets/img/about/3.png');
+                                    border-radius: 8px;
+                                "
+                            ></div>
                         </div>
                     </section>
-                    <section></section>
+                    <!-- <div style="clear: right"></div> -->
+                    <div
+                        class="about__see-more"
+                        style="background-image: url('./public/assets/img/about/more-1-2.svg')"
+                    >
+                        <span>Xem Thêm</span>
+                        <img
+                            style="width: 17px; height: 12px"
+                            src="./public/assets/img/about/arrow-to-right.svg"
+                            alt=""
+                        />
+                    </div>
                 </section>
             </section>
 
             <section class="footer"></section>
         </main>
+        <svg style="visibility: hidden; position: absolute" width="0" height="0">
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur" />
+                    <feColorMatrix
+                        in="blur"
+                        mode="matrix"
+                        values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                        result="goo"
+                    />
+                    <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+                </filter>
+            </defs>
+        </svg>
     </body>
 
     <script src="public/assets/js/main.js" type="module"></script>

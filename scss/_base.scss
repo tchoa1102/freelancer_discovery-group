@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --bg-sbtr: #000;
+}
+
 html {
     font-family: 'Be Vietnam Pro';
 }
@@ -12,10 +16,11 @@ body {
     display: flex;
     justify-content: center;
     background: #fff;
+    color: #383838;
 }
 
 main {
-    border: 1px solid #000;
+    // border: 1px solid #000;
     width: 1440px;
     display: flex;
     align-items: center;
@@ -24,9 +29,54 @@ main {
 
 a {
     text-decoration: none;
-    color: #000;
+    color: #383838;
 }
 
 .hidden {
     display: none;
+}
+
+.bg-center {
+    background-size: cover;
+    background-position: center;
+}
+
+.substract {
+    display: inline-block;
+    // width height custom
+    // width: 230px;
+    // height: 300px;
+    background-size: 100%;
+    // color: orange;
+    filter: url('#goo');
+}
+
+// .substract::before {
+//     content: '';
+//     display: block;
+//     padding-top: 100%;
+//     background: var(--bg-sbtr, #000);
+//     background-size: 100%;
+//     // clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 20%);
+//     // background: currentColor;
+// }
+
+.substract-bg {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.substract--top-left {
+    .substract-bg {
+        -webkit-clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 20%);
+        clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 16%);
+    }
+}
+.substract--bottom-left {
+    .substract-bg {
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 10% 100%, 0% 74%);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 10% 100%, 0% 74%);
+    }
 }
