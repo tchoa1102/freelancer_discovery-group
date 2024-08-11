@@ -2,6 +2,9 @@
     & {
         color: #f2f8fd;
         padding: 70px;
+        @media only screen and (max-width: 600px) {
+            padding: 0 24px;
+        }
     }
 
     &__heading {
@@ -12,6 +15,13 @@
             font-weight: 700;
             line-height: 1.5;
             margin-bottom: 60px;
+
+            @media only screen and (max-width: 600px) {
+                font-size: 20px;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 30px;
+            }
         }
         & > span:first-child {
             color: #e74822;
@@ -26,11 +36,20 @@
             // overflow-x: auto;
             // scroll-behavior: smooth;
             // scrollbar-width: 0;
+            @media only screen and (max-width: 600px) {
+                gap: 30px;
+                flex-direction: column;
+            }
         }
 
         &__item {
             width: 380px;
             height: 280px;
+            @media only screen and (max-width: 600px) {
+                width: 340px;
+                height: 230px;
+            }
+
             &-container {
                 & {
                     border: 0.5px solid #00254e;
@@ -45,6 +64,12 @@
                     gap: 30px;
                     align-items: center;
                     color: #00254e;
+
+                    @media only screen and (max-width: 600px) {
+                        padding-top: 30px;
+                        padding-left: 21px;
+                        padding-right: 21px;
+                    }
                 }
                 &.active {
                     color: #f2f8fd;
