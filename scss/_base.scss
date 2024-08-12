@@ -23,7 +23,8 @@ body {
 
 main {
     // border: 1px solid #000;
-    width: 1440px;
+    max-width: 1600px;
+    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;

@@ -198,17 +198,30 @@
                         ></div>
                     </section>
                     <!-- <div style="clear: right"></div> -->
-                    <a
-                        href=""
-                        class="about__see-more"
-                        style="background-image: url('./public/assets/img/about/more-1-2.svg')"
-                    >
+                    <a href="" class="about__see-more">
                         <span>Xem Thêm</span>
-                        <img
+                        <svg
+                            width="19"
+                            height="14"
+                            viewBox="0 0 19 14"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M11.9297 1L17.9997 7L11.9297 13M1 6.99995H17.83"
+                                stroke="#383838"
+                                stroke-width="1.5"
+                                stroke-miterlimit="10"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+
+                        <!-- <img
                             style="width: 17px; height: 12px"
                             src="./public/assets/img/about/arrow-to-right.svg"
                             alt=""
-                        />
+                        /> -->
                     </a>
                 </section>
 
@@ -224,7 +237,7 @@
                                     class="splide__slide why-choose__list__item substract substract--top-left-and-bottom-right"
                                 >
                                     <div
-                                        class="active why-choose__list__item-container substract-bg"
+                                        class="active why-choose__list__item-container border-clip substract-bg"
                                     >
                                         <div class="why-choose__list__item-container__media">
                                             <img
@@ -833,7 +846,9 @@
                         <div class="splide__track">
                             <section class="splide__list blog__body">
                                 <div class="splide__slide blog__body__list-card">
-                                    <img src="./public/assets/img/blog/1.png" alt="" />
+                                    <div class="blog__body__list-card-media">
+                                        <img src="./public/assets/img/blog/1.png" alt="" />
+                                    </div>
                                     <div class="blog__body__list__action">
                                         <div>
                                             <img src="./public/assets/img/timer.svg" alt="" />
@@ -861,7 +876,9 @@
                                     /></a>
                                 </div>
                                 <div class="splide__slide blog__body__list-card">
-                                    <img src="./public/assets/img/blog/2.png" alt="" />
+                                    <div class="blog__body__list-card-media">
+                                        <img src="./public/assets/img/blog/2.png" alt="" />
+                                    </div>
                                     <div class="blog__body__list__action">
                                         <div>
                                             <img src="./public/assets/img/timer.svg" alt="" />
@@ -1153,7 +1170,7 @@
             if (window.innerWidth > 600) {
                 new Splide('#slide-why-choose', {
                     type: 'loop',
-                    perPage: 3.42, // Hiển thị 3,5 phần tử mỗi lần
+                    perPage: 3, // Hiển thị 3,5 phần tử mỗi lần
                     perMove: 1, // Di chuyển 1 phần tử mỗi lần
                     focus: 'center', // Căn giữa các phần tử
                     autoplay: true, // Tự động cuộn

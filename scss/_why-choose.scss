@@ -31,7 +31,7 @@
     &__list {
         & {
             display: flex;
-            gap: 35px;
+            gap: 20px;
             // overflow: hidden;
             // overflow-x: auto;
             // scroll-behavior: smooth;
@@ -71,13 +71,13 @@
                         padding-right: 21px;
                     }
                 }
-                &.active {
-                    color: #f2f8fd;
-                    background-color: #00254e;
-                    &__media {
-                        background-color: #f2f8fd;
-                    }
-                }
+                // &.active {
+                //     color: #f2f8fd;
+                //     // background-color: #00254e;
+                //     &__media {
+                //         background-color: #f2f8fd;
+                //     }
+                // }
 
                 &__media {
                     & {
@@ -131,6 +131,26 @@
                         @media only screen and (max-width: 600px) {
                             font-size: 12px;
                         }
+                    }
+                }
+            }
+
+            &:hover {
+                .border-clip::after {
+                    transition: height 0.3s;
+                    height: 0;
+                }
+
+                .why-choose__list__item-container {
+                    color: #f2f8fd;
+                    &__body {
+                        p {
+                            color: #f2f8fd;
+                        }
+                    }
+                    // background-color: #00254e;
+                    &__media {
+                        background-color: #f2f8fd;
                     }
                 }
             }
