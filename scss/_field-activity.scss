@@ -64,6 +64,7 @@
             &__item {
                 & {
                     position: relative;
+                    overflow: hidden;
                 }
 
                 &:hover &__container {
@@ -71,7 +72,9 @@
                 }
 
                 &:hover &__media {
-                    display: none;
+                    // display: none;
+                    opacity: 0;
+                    height: 0;
                 }
 
                 &:hover &__heading {
@@ -81,6 +84,46 @@
                 &:hover &__title {
                     display: block;
                 }
+
+                .over {
+                    // transform: translateY(100%);
+                    // transition: height 3s, opacity 1s;
+                    transition: opacity 0.75s;
+                    & > div {
+                        top: 0;
+                        transition: top 0.5s;
+                    }
+                }
+
+                // .substract-bg {
+                //     background-size: 0 !important;
+                //     // background-color: transparent !important;
+                // }
+
+                // &:hover .substract-bg {
+                //     background-size: cover;
+                //     background-color: #383838;
+                // }
+
+                &:hover .over {
+                    opacity: 0;
+                    & > div {
+                        top: -70%;
+                    }
+                    // height: 50%;
+                    // transform: translateY(-50%);
+                    // bottom: 50%;
+                }
+
+                // &::after {
+                //     content: '';
+                //     position: absolute;
+                //     top: 0;
+                //     left: 0;
+                //     width: 100%;
+                //     height: 100%;
+                //     background-color: red;
+                // }
 
                 .substract {
                     width: 300px;
@@ -100,6 +143,7 @@
                     display: flex;
                     align-items: center;
                     flex-direction: column;
+                    transition: bottom 1s;
                 }
 
                 &__media {
@@ -108,6 +152,8 @@
                     height: 60px;
                     background-size: contain;
                     background-position: center;
+                    opacity: 1;
+                    transition: opacity 0.5s, height 1s;
                 }
 
                 &__heading {

@@ -20,3 +20,33 @@
 @import './core-value-and-commitment';
 @import './field-activity';
 @import './blog';
+
+.float-buttons {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 70%;
+    /* bottom: 0; */
+    right: 0;
+    width: 70px;
+    transform: translateY(-50%);
+    z-index: 1000;
+    border: none;
+    .icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: transparent;
+        padding: 10px 0;
+
+        button {
+            background: #00254e;
+            width: 35px;
+            height: 35px;
+            margin-top: 15px;
+            border-radius: 0;
+            animation: smooth-appear 0.3s ease forwards;
+        }
+    }
+}
