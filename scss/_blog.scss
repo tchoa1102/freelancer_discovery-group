@@ -37,10 +37,11 @@
     &__body {
         & {
             display: flex;
-            overflow: hidden;
+            // overflow: hidden;
             gap: 41px;
             @media only screen and (max-width: 600px) {
-                flex-wrap: nowrap;
+                // flex-wrap: nowrap;
+                gap: unset;
             }
         }
         &__list-card {
@@ -162,5 +163,10 @@
 
             font-weight: 600;
         }
+    }
+}
+#blog-mobile-slide.splide {
+    @media only screen and (min-width: 600px) {
+        visibility: visible;
     }
 }

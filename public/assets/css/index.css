@@ -1064,12 +1064,11 @@ a {
 }
 .blog__body {
   display: flex;
-  overflow: hidden;
   gap: 41px;
 }
 @media only screen and (max-width: 600px) {
   .blog__body {
-    flex-wrap: nowrap;
+    gap: unset;
   }
 }
 .blog__body__list-card {
@@ -1192,4 +1191,10 @@ a {
   font-size: 12px;
   line-height: 1.4;
   font-weight: 600;
+}
+
+@media only screen and (min-width: 600px) {
+  #blog-mobile-slide.splide {
+    visibility: visible;
+  }
 }/*# sourceMappingURL=index.css.map */
