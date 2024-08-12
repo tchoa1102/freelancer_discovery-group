@@ -437,9 +437,11 @@ a {
   display: flex;
   justify-content: center;
   text-align: center;
+  z-index: 1;
 }
 .banner__social__container__item img {
   block-size: 15px;
+  z-index: 1;
 }
 .banner__social__container__item::after {
   content: "";
@@ -447,7 +449,8 @@ a {
   top: 80%;
   left: 50%;
   height: 0;
-  background-image: url("../public/assets/img/social/face-book-bg.png");
+  background-position: center;
+  background-image: url(../../../../../../../public/assets/img/social/bg.svg);
   background-size: cover;
   background-repeat: no-repeat;
   transform: translate(-50%, -50%);
@@ -455,8 +458,8 @@ a {
   z-index: 0;
 }
 .banner__social__container__item:hover::after {
-  width: 40px;
-  height: 40px;
+  width: 28px;
+  height: 22px;
 }
 
 .about {
@@ -1331,6 +1334,7 @@ a {
 }
 .float-buttons .icon button {
   background: #00254e;
+  cursor: pointer;
   width: 35px;
   height: 35px;
   margin-top: 15px;
