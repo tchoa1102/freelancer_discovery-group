@@ -758,8 +758,8 @@
 
                     <div id="blog-mobile-slide" class="splide">
                         <div class="splide__track">
-                            <section class="splide__list blog__body">
-                                <div class="splide__slide blog__body__list-card">
+                            <ul class="splide__list blog__body">
+                                <li class="splide__slide blog__body__list-card">
                                     <div class="blog__body__list-card-media">
                                         <img src="./public/assets/img/blog/1.png" alt="" />
                                     </div>
@@ -788,8 +788,8 @@
                                         >Xem chi tiết
                                         <img src="./public/assets/img/double-to-right.svg" alt=""
                                     /></a>
-                                </div>
-                                <div class="splide__slide blog__body__list-card">
+                                </li>
+                                <li class="splide__slide blog__body__list-card">
                                     <div class="blog__body__list-card-media">
                                         <img src="./public/assets/img/blog/2.png" alt="" />
                                     </div>
@@ -817,8 +817,8 @@
                                         >Xem chi tiết
                                         <img src="./public/assets/img/double-to-right.svg" alt=""
                                     /></a>
-                                </div>
-                                <div
+                                </li>
+                                <li
                                     class="splide__slide blog__body__list-card blog__body__list-title"
                                 >
                                     <div class="blog__body__list-title__item">
@@ -865,8 +865,8 @@
                                             Gamuda Land tại Bình Chánh, TPHCM
                                         </p>
                                     </div>
-                                </div>
-                            </section>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </section>
@@ -1163,14 +1163,27 @@
                     pagination: false,
                 }).mount()
             } else {
-                new Splide('#blog-mobile-slide', {
-                    type: 'loop',
+                var splide = new Splide('#blog-mobile-slide', {
+                    type: 'slide',
                     perPage: 1,
                     perMove: 1,
                     autoplay: true,
                     interval: 3000,
                     arrows: false,
-                }).mount()
+                    rewindByDrag: true,
+                });
+
+                console.log('Slide', splide);
+
+                splide.mount();
+                // new Splide('#blog-mobile-slide', {
+                //     type: 'loop',
+                //     perPage: 1,
+                //     perMove: 1,
+                //     autoplay: true,
+                //     interval: 3000,
+                //     arrows: false,
+                // }).mount()
             }
         })
     </script>
