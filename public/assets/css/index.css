@@ -30,6 +30,7 @@ main {
 }
 .temp-banner {
   width: 100vw;
+  /* height: 30vw; */
   margin-left: calc(50% - 50vw);
   position: relative;
 }
@@ -70,7 +71,7 @@ a {
 .substract--top-left > div:first-child,
 .substract--top-left .substract-bg {
   -webkit-clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 20%);
-  clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 16%);
+  clip-path: polygon(18% -8%, 100% 0%, 109% 101%, -2% 100%, 0% 16%)
 }
 
 .substract--top-right > div:first-child,
@@ -395,7 +396,7 @@ a {
 }
 @media only screen and (max-width: 600px) {
   .banner {
-    height: 450px;
+    height: 400px;
   }
 }
 .banner__item {
@@ -494,6 +495,7 @@ a {
 @media only screen and (max-width: 600px) {
   .about {
     padding: 0px 24px;
+    margin-top: -30px;
   }
 }
 .about__body {
@@ -808,10 +810,12 @@ a {
   font-weight: 300;
   font-size: 14px;
   line-height: 1.524;
+ 
 }
 @media only screen and (max-width: 600px) {
   .why-choose__list__item-container__body > p:nth-child(2) {
     font-size: 12px;
+    padding: 0 28px;
   }
 }
 .why-choose__list__item:hover .border-clip::after {
@@ -855,6 +859,7 @@ a {
   font-weight: 700;
   display: inline-block;
   word-spacing: -1px;
+  text-align: center;
 }
 @media only screen and (max-width: 600px) {
   .core-value-and-commitment__heading {
@@ -1274,7 +1279,7 @@ a {
   line-height: 1.5;
 }
 @media only screen and (max-width: 600px) {
-  .blog__body__list-title__item h3 {
+  .blog__body__list-title__item{
     font-size: 14px;
   }
 }
